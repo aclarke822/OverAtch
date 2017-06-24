@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  greetingMessage = 'OverAtch!!! Get to fertin!';
+  toolbarLeft = 'Let\'s get to work!!';
+  toolbarRight = 'Need some back end';
 }
