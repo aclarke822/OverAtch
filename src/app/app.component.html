@@ -1,32 +1,12 @@
 <!--The whole content below can be removed with the new code.-->
-
-<md-toolbar color="primary">
-  <button md-icon-button [mdMenuTriggerFor]="menu">
-    <i class="material-icons">more_vert</i>
-  </button>
-  <md-menu #menu="mdMenu">
-    <button md-menu-item>
-      <span>Overview</span>
-    </button>
-    <button md-menu-item>
-      <span>Competitive</span>
-    </button>
-    <button md-menu-item>
-      <span>Historical</span>
-    </button>
-  </md-menu>
-  <span>{{toolbarLeft}}</span>
-
-  <!-- This fills the remaining space of the current row -->
-  <span class="example-fill-remaining-space"></span>
-
-  <span>{{toolbarRight}}</span>
-</md-toolbar>
-
 <div style="text-align:center">
+  <app-navbar><img src="../../../../AppData/Local/Temp/SIAt80cr.jpg"/></app-navbar>
   <section class="mat-typography">
     <h1>{{greetingMessage}}!!</h1>
   </section>
-  <img width="1000"
-       src="http://i.imgur.com/SIAt80cr.jpg"/>
+
+  <ul>
+    <li></li>
+  </ul>
+  <img src="http://i.imgur.com/SIAt80cr.jpg"/>
 </div>

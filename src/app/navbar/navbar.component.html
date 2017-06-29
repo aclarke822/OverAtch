@@ -1,0 +1,44 @@
+<md-toolbar>
+  <button md-icon-button [mdMenuTriggerFor]="menu">
+    <i class="material-icons">more_vert</i>
+  </button>
+  <md-menu #menu="mdMenu">
+    <button md-menu-item (click)="OnClick($event)">
+      <i class="material-icons">donut_large</i>
+      <span>Overview</span>
+    </button>
+    <button md-menu-item (click)="OnClick($event)">
+      <i class="material-icons">keyboard_capslock</i>
+      <span>Competitive</span>
+    </button>
+    <button md-menu-item (click)="OnClick($event)">
+      <i class="material-icons">multiline_chart</i>
+      <span>Historical</span>
+    </button>
+  </md-menu>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="example-fill-remaining-space"></span>
+
+  <form class="example-form">
+
+    <button md-raised-button (click)="service.Search()">Search</button>
+
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="User" [(ngModel)]="service.searchPackage.user" [ngModelOptions]="{standalone: true}">
+    </md-input-container>
+
+    <md-select [(ngModel)]="service.searchPackage.platform" [ngModelOptions]="{standalone: true}" placeholder="Platform">
+      <md-option *ngFor="let platform of service.PLATFORMS" [value]="platform">
+        {{platform}}
+      </md-option>
+    </md-select>
+
+    <md-select [(ngModel)]="service.searchPackage.region" [ngModelOptions]="{standalone: true}" placeholder="Region" >
+      <md-option *ngFor="let region of service.REGIONS" [value]="region">
+        {{region}}
+      </md-option>
+    </md-select>
+  </form>
+
+</md-toolbar>
