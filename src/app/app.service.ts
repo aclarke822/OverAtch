@@ -1,5 +1,4 @@
-// Imports
-import {Injectable} from '@angular/core';
+import {Injectable, OnInit} from '@angular/core';
 import overwatch from 'overwatch-js/lib/overwatch.js';
 
 @Injectable()
@@ -11,7 +10,7 @@ export class AppService {
     region: '',
     user: ''
   };
-  playerData = {};
+  playerData = null;
 
   static formatRegion(region) {
     console.log(region);

@@ -1,0 +1,21 @@
+<md-card *ngIf="service.playerData !== null" class="card">
+  <img src={{service.playerData.profile.avatar}}>
+  <md-card-header>
+    <md-card-title>Profile</md-card-title>
+    <md-card-subtitle>User: {{service.playerData.profile.nick}}</md-card-subtitle>
+    <md-card-subtitle>Level: {{service.playerData.profile.tier *100 + service.playerData.profile.level}}</md-card-subtitle>
+    <md-card-title>Competitive</md-card-title>
+    <img src={{service.playerData.profile.rankPicture}}>
+    <md-card-subtitle>Rank: {{service.playerData.profile.rank}}</md-card-subtitle>
+    <md-card-subtitle>Average Deaths: {{service.playerData.competitive.global.deaths_average}}</md-card-subtitle>
+    <md-card-subtitle>Average Eliminations: {{service.playerData.competitive.global.eliminations_average}}</md-card-subtitle>
+    <md-card-subtitle>Average Damage Done: {{service.playerData.competitive.global.damage_done_average}}</md-card-subtitle>
+  </md-card-header>
+
+  <md-card-content>
+  </md-card-content>
+  <md-card-actions>
+    <button md-button>1</button>
+    <button md-button>2</button>
+  </md-card-actions>
+</md-card>

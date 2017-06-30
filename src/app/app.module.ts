@@ -13,11 +13,13 @@ import {UIRouterConfigFn} from './app.router';
 import {NavbarComponent} from './navbar/navbar.component';
 
 import 'hammerjs';
+import { OverviewComponent } from './overview/overview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    OverviewComponent
   ],
   imports: [
     BrowserModule,

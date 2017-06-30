@@ -7,6 +7,6 @@ import {AppService} from './app.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  greetingMessage = 'OverAtch!!! Stop fertin around!';
+  greetingMessage = 'OverWatch';
   constructor(private appService: AppService) {}
 }
